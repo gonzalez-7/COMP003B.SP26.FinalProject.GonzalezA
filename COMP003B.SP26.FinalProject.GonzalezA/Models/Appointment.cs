@@ -21,6 +21,9 @@ namespace COMP003B.SP26.FinalProject.GonzalezA.Models
 		[StringLength(20)]
 		public string AppointmentTime { get; set; }
 
+		[StringLength(20)]
+		public string AppointmentStatus { get; set; }
+
 		public bool IsConfirmed { get; set; }
 
 		public virtual Customer? Customer { get; set; }
