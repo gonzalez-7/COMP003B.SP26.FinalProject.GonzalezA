@@ -16,7 +16,7 @@ namespace COMP003B.SP26.FinalProject.GonzalezA.Models
 
 
 		[Range(1, 150)]
-		public int price { get; set; }
+		public int Price { get; set; }
 
 
 		[Range(10, 120)]
