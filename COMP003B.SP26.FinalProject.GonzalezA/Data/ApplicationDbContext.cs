@@ -11,7 +11,7 @@ namespace COMP003B.SP26.FinalProject.GonzalezA.Data
 
 		public DbSet<Barber> Barbers { get; set; }
 
-		public DbSet<BarberService> BarbersServices { get; set; }
+		public DbSet<BarberService> BarberServices { get; set; }
 
 		public DbSet<Appointment> Appointments { get; set; }
 
