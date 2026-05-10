@@ -10,6 +10,11 @@
 <p>
     <a asp-action="Create">Create New</a>
 </p>
+@foreach (var item in Model)
+{
+    <partial name="_ServiceCard" model-"item" />
+}
+
 <table class="table">
     <thead>
         <tr>
