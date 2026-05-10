@@ -12,7 +12,7 @@
 </p>
 @foreach (var item in Model)
 {
-    <partial name="_ServiceCard" model-"item" />
+    @await Html.PartialAsync("_ServiceCard", item)
 }
 
 <table class="table">
