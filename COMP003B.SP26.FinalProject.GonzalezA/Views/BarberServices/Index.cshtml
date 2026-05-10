@@ -10,6 +10,14 @@
 <p>
     <a asp-action="Create">Create New</a>
 </p>
+
+
+<form asp-action="Search" method="get">
+    <input type="text" name="serviceName" placeholder="Search service name" />
+    <button type="submit">Search</button>
+</form>
+
+
 @foreach (var item in Model)
 {
     @await Html.PartialAsync("_ServiceCard", item)

@@ -25,6 +25,22 @@ namespace COMP003B.SP26.FinalProject.GonzalezA.Controllers
             return View(await _context.BarberServices.ToListAsync());
         }
 
+
+        [HttpGet]
+        public IActionResult Search([FromQuery] string serviceName)
+        {
+            var services = _context.BarberServices.ToList();
+
+            if (serviceName != null)
+            {
+                services = services.Where(s => s.ServiceName == serviceName).ToList();
+            }
+
+            return View("Index", services);
+        }
+
+
+
         // GET: BarberServices/Details/5
         public async Task<IActionResult> Details(int? id)
         {
